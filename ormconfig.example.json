@@ -1,0 +1,19 @@
+[
+  {
+    "name": "development", // The ENV name --EDIT--
+    "type": "mysql", // The DBMS --EDIT--
+    "host": "127.0.0.1", // The Database server host --EDIT--
+    "port": 3306, // The Database server port --EDIT--
+    "username": "root", // The Database user --EDIT--
+    "password": "root", // The Database pass --EDIT--
+    "database": "my_database", // The Database name --EDIT--
+    "synchronize": true, // If true typeorm refresh the entities automatically
+    "logging": true,
+    "entities": [
+      "../backend/src/3-dal/entities/*.js" // Entities path
+    ],
+    "cli": {
+      "entitiesDir": "../backend/src/3-dal/entities" // Entities path
+    }
+  }
+]
